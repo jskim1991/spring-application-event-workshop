@@ -1,14 +1,23 @@
+### What is Event-Driven Architecture?
+- ...
+- ...
+- ...
 
+### What are some common patterns in EDA?
+- ...
+- ...
+- ...
 
-### What is Spring Application Event?
-- Provides a simple way for components in the **same application** to communicate using **publish-subscribe** model
-- **In-memory event mechanism** based on the **observer pattern**, allowing **synchronous and asynchronous** communication between Spring beans
+### How have you made your application event-driven in the past?
+- ...
+- ...
+- ...
 
 ### Why use Events?
 - Decoupling - Reduce tight coupling between components
-- Separation of Concerns - Keep core logic clean
 - Flexibility - Add or change behavior without modifying existing logic
-- Extendability - Easily hook into business flows with new listeners
+- Scalability - Handle high loads by processing events asynchronously
+- Reliability - Events can be processed safely without being lost
 
 ### Example Real world use cases
 
@@ -18,6 +27,10 @@
 | Order placed      | OrderPlacedEvent → listeners handle inventory, notify warehouse, email receipt |
 | Audit logging     | Listen to any domain event and persist an audit log                            |
 | Search indexing   | After a new article is saved → trigger async search indexing                   |
+
+### What is Spring Application Event?
+- Provides a simple way for components in the **same application** to communicate using **publish-subscribe** model
+- **In-memory event mechanism** based on the **observer pattern**, allowing **synchronous and asynchronous** communication between Spring beans
 
 ### Live Coding
 - Internal Events
@@ -30,7 +43,7 @@
 
 | Use Case                     | What Happens                                                           |
 |------------------------------|------------------------------------------------------------------------|
-| In-app Notification          | Story is updated or export is completed → create notification for user |
+| In-App Notification          | Story is updated or export is completed → create notification for user |
 | Live update signal           | Story is updated → update with the latest data for users               |
 | Story Cycle time calculation | Story is updated → update story cycle time for analytics               |
 
